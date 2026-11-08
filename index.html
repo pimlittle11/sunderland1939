@@ -1,47 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Welcome to Sunderland | Est. 1939</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Sunderland, a 1939 cottage in Charlottesville, Virginia — its architecture, unexpected rooms, gardens and stories.">
+  <title>Welcome to Sunderland | A Charlottesville Cottage Since 1939</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      background: #f7f5ef;
-      color: #343a32;
-      text-align: center;
-      padding: 70px 20px;
-      line-height: 1.7;
-    }
-    h1 { font-size: 3em; color: #455b45; }
-    h2 { font-weight: normal; }
-    .welcome { max-width: 650px; margin: auto; }
-    footer { margin-top: 70px; font-size: 0.9em; }
+    :root{--ivory:#f7f5ef;--sage:#455b45;--ink:#343a32;--muted:#697366;--line:#dddcd2;--card:#fffdfa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+    a{color:inherit}a:focus-visible{outline:3px solid #8aa282;outline-offset:4px}
+    .wrap{width:min(1140px,calc(100% - 42px));margin:auto}.masthead{padding:26px 0;border-bottom:1px solid var(--line)}
+    .masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-size:1.25rem;letter-spacing:.13em;font-weight:bold;text-decoration:none;color:var(--sage)}
+    .nav{display:flex;gap:24px;font-size:.93rem}.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+    .intro{text-align:center;padding:60px 0 34px}.eyebrow{color:var(--muted);font-family:Arial,sans-serif;font-size:.76rem;letter-spacing:.25em;text-transform:uppercase}
+    h1{font-size:clamp(2.6rem,6.6vw,5.0rem);color:var(--sage);line-height:1.08;font-weight:normal;margin:10px auto 12px}
+    .subtitle{font-size:clamp(1.15rem,2.5vw,1.65rem);margin:0 0 22px}.lede{max-width:690px;margin:0 auto;color:#51594d;font-size:1.07rem}
+    .hero{margin:22px auto 0}.hero img{display:block;width:100%;max-height:600px;aspect-ratio:16/9;object-fit:cover;object-position:center 47%;border-radius:4px}
+    figcaption{font: .84rem/1.5 Arial,sans-serif;color:var(--muted);margin-top:10px}
+    .quote{text-align:center;padding:52px 20px}.quote p{color:var(--sage);font-style:italic;font-size:clamp(1.25rem,3vw,1.8rem);margin:0}
+    .section-head{text-align:center;margin-bottom:32px}.section-head h2{font-size:clamp(1.85rem,4vw,2.65rem);color:var(--sage);font-weight:normal;margin:0 0 10px}.section-head p{max-width:650px;margin:auto;color:#5d6558}
+    .gallery{padding-bottom:64px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.photo-card{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+    .photo-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.photo-card .caption{padding:17px 20px 21px}.photo-card h3{margin:0 0 4px;font-size:1.37rem;font-weight:normal;color:var(--sage)}.photo-card p{font-size:.97rem;margin:0;color:#5c655a}
+    .story{background:#edf0e9;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:48px 0;text-align:center}.story p{max-width:700px;margin:12px auto 0}
+    footer{text-align:center;padding:45px 20px 55px;color:#646d61;font-size:.88rem}
+    @media(max-width:650px){.wrap{width:min(100% - 28px,1140px)}.masthead .wrap{flex-direction:column}.nav{gap:16px}.intro{padding-top:43px}.cards{grid-template-columns:1fr;gap:18px}.hero img{aspect-ratio:4/3}.quote{padding:40px 10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-  <main class="welcome">
-    <h1>Welcome to Sunderland</h1>
-    <h2>A Charlottesville Cottage Since 1939</h2>
-
-    <p>
-      A little house with a long history,
-      hidden corners, and stories to tell.
-    </p>
-
-    <p><em>
-      "It just has more house than you expect!"
-    </em></p>
-
-    <p>
-      The Sunderland Saga is coming soon.
-    </p>
+  <header class="masthead"><div class="wrap"><a class="brand" href="#top">SUNDERLAND <span aria-hidden="true">·</span> 1939</a><nav class="nav" aria-label="Page sections"><a href="#explore">Explore</a><a href="#story">Our Story</a></nav></div></header>
+  <main id="top">
+    <section class="intro wrap"><div class="eyebrow">Charlottesville, Virginia</div><h1>Welcome to Sunderland</h1><p class="subtitle">A Charlottesville Cottage Since 1939</p><p class="lede">A little house with a long history, hidden corners, and stories to tell.</p></section>
+    <figure class="hero wrap"><img src="Images/exterior.jpg" alt="Sunderland cottage and its detached studio among mature autumn trees" fetchpriority="high"><figcaption>Sunderland in autumn — a modest street view with more to discover inside.</figcaption></figure>
+    <div class="quote"><p>“It just has more house than you expect!”</p></div>
+    <section class="gallery wrap" id="explore"><div class="section-head"><h2>Come inside</h2><p>From the light-filled living room to the tucked-away reading nook, Sunderland reveals itself one room at a time.</p></div>
+      <div class="cards">
+        <article class="photo-card"><img src="Images/living-room.jpg" alt="Sunderland living room with fireplace, sofa and large windows" loading="lazy"><div class="caption"><h3>The Living Room</h3><p>A fireplace, tall windows and a place to settle in.</p></div></article>
+        <article class="photo-card"><img src="Images/reading-nook.jpg" alt="Small window-lined reading nook looking toward the autumn garden" loading="lazy"><div class="caption"><h3>The Reading Nook</h3><p>A favorite little corner for watching the seasons change.</p></div></article>
+        <article class="photo-card"><img src="Images/dining-room.jpg" alt="Sunderland dining room with wooden table, chairs and French doors" loading="lazy"><div class="caption"><h3>The Dining Room</h3><p>Gathering spaces and doorways that lead to another surprise.</p></div></article>
+        <article class="photo-card"><img src="Images/kitchen.jpg" alt="Long galley kitchen with a gas cooktop and white cabinets" loading="lazy"><div class="caption"><h3>The Kitchen</h3><p>Bright, practical and full of stories still to tell.</p></div></article>
+      </div>
+    </section>
+    <section class="story" id="story"><div class="wrap"><div class="section-head"><h2>The Sunderland Saga</h2><p>A house dating to 1939, with additions, quirks, discoveries and a growing collection of true stories.</p></div><p>More rooms, garden paths, the Studio and the stories behind them are coming soon.</p></div></section>
   </main>
-
-  <footer>
-    Sunderland · Charlottesville, Virginia
-  </footer>
+  <footer>Sunderland · Charlottesville, Virginia · Est. 1939</footer>
 </body>
 </html>
